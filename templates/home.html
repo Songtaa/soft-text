@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block title %}
+Welcome to shop OK
+{% endblock %}
+{% block content %}
+    <div class="jumbotron">
+        <h1 class="display-3">Welcome to Soft-text!</h1>
+        <p> A simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+        {% if session.logged_in == NULL %}
+            <a href="/register" class ="btn btn-primary btn-lg">Register &raquo;</a>
+            <a href="/login" class ="btn btn-success btn-lg">Login &raquo;</a>
+        {% endif %}
+    </div>
+{% endblock %}
